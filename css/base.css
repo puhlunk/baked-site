@@ -60,6 +60,21 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Reduced width to keep it on the left */
+    height: 100%;
+    z-index: 4; /* Keeping your z-index value */
+    background-image: url('/assets/cache/cache71.png');
+    background-repeat: repeat;
+    background-size: 1000px; /* Makes each repeated image smaller */
+    opacity: 0.04;
+    pointer-events: none;
+  }
+
 body.menu-open {
     overflow: hidden;
 }
