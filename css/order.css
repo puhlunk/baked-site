@@ -1,0 +1,410 @@
+/* 
+Baked on 8th - Order Page Styles 
+*/
+
+/* Order Hero Section */
+.order-hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url('../assets/order.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+    padding: calc(var(--spacing-xl) * 1.5) var(--spacing-md);
+}
+
+.order-hero h1 {
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.order-hero p {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* How to Order Section - NEW! */
+.how-to-order {
+    background-color: var(--light-gray);
+    padding: var(--spacing-lg) var(--spacing-md);
+    text-align: center;
+}
+
+.how-to-order .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.order-options {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.order-option {
+    flex: 1;
+    max-width: 450px;
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-option:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-medium);
+}
+
+.order-option .icon-container {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(245, 168, 161, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+}
+
+.order-option.same-day .icon-container {
+    background-color: rgba(245, 168, 161, 0.15);
+}
+
+.order-option.future .icon-container {
+    background-color: rgba(66, 135, 245, 0.15);
+}
+
+.order-option i {
+    font-size: 2rem;
+}
+
+.order-option.same-day i {
+    color: var(--primary);
+}
+
+.order-option.future i {
+    color: var(--accent);
+}
+
+.order-option h3 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+}
+
+.order-option p {
+    margin-bottom: var(--spacing-md);
+    color: var(--dark-gray);
+}
+
+.phone-btn, .form-btn {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-bottom: var(--spacing-sm);
+}
+
+.phone-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+.phone-btn:hover {
+    background-color: #e05c50;
+    transform: scale(1.05);
+}
+
+.form-btn {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+.form-btn:hover {
+    background-color: #1c5ecf;
+    transform: scale(1.05);
+}
+
+.order-option .availability {
+    font-size: 0.85rem;
+    color: var(--medium-gray);
+    margin-top: var(--spacing-sm);
+}
+
+/* Order Content Layout */
+.order-content {
+    display: flex;
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: var(--spacing-xl) auto;
+    padding: 0 var(--spacing-md);
+}
+
+.order-policies {
+    flex: 1;
+    background-color: var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    height: fit-content;
+}
+
+.order-form-container {
+    flex: 1;
+}
+
+/* Policy Sections */
+.policy-alert {
+    background-color: rgba(245, 168, 161, 0.1);
+    border-left: 4px solid var(--primary);
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.policy-alert h3 {
+    color: var(--primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.policy-alert ul {
+    list-style-type: disc;
+    padding-left: var(--spacing-md);
+}
+
+.policy-alert ul li strong {
+    color: var(--secondary);
+}
+
+.policy-alert ul li a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.policy-alert ul li a:hover {
+    text-decoration: underline;
+}
+
+.cake-size-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.cake-size {
+    background-color: var(--white);
+    padding: var(--spacing-sm);
+    text-align: center;
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease;
+}
+
+.cake-size:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.cake-size h4 {
+    color: var(--accent);
+    margin-bottom: var(--spacing-xs);
+}
+
+.cake-size p {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.cake-size small {
+    color: var(--dark-gray);
+    display: block;
+    margin-top: var(--spacing-xs);
+}
+
+.pricing-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    margin-top: var(--spacing-sm);
+}
+
+.pricing-note a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pricing-note a:hover {
+    text-decoration: underline;
+}
+
+.pop-tart-section {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Order Form Styles */
+.form-intro {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+.form-intro a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-intro a:hover {
+    text-decoration: underline;
+}
+
+.order-form {
+    background-color: var(--white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-light);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-sm);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius-sm);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(245, 168, 161, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.order-form .btn {
+    width: 100%;
+    margin-top: var(--spacing-sm);
+}
+
+.same-day-reminder {
+    margin-top: var(--spacing-md);
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: rgba(245, 168, 161, 0.1);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+}
+
+.phone-btn-inline {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.phone-btn-inline:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* Enhanced phone link styles throughout the page */
+.phone-link {
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.phone-link:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.phone-link i {
+    margin-right: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .order-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .order-option {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .order-content {
+        flex-direction: column;
+    }
+
+    .cake-size-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cake-size-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-content {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .phone-btn, .form-btn {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Form Validation Styles */
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+    border-color: #dc3545;
+}
+
+.form-group .error-message {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-group.error .error-message {
+    display: block;
+}

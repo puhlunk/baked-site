@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Baked on 8th</title>
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Order Page Specific CSS -->
+    <link rel="stylesheet" href="css/order.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header (same as other pages) -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/bakedlogo.webp" alt="Baked on 8th Logo">
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="desktop-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#location">Visit Us</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="order-btn"><a href="#" class="active">Order Online</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+        
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#location">Visit Us</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="order-btn"><a href="#" class="active">Order Online</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Order Page Hero -->
+    <section class="order-hero">
+        <div class="section-header">
+            <h1>Order Your Sweet Moment</h1>
+            <p>Delicious cakes and treats, ready for pickup</p>
+        </div>
+    </section>
+
+    <!-- How to Order Section - NEW! -->
+    <section class="how-to-order">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to Place Your Order</h2>
+                <p>We offer two convenient ways to order based on your timeline</p>
+            </div>
+            
+            <div class="order-options">
+                <div class="order-option same-day">
+                    <div class="icon-container">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Same-Day Orders</h3>
+                    <p>Need something sweet today? Call us directly!</p>
+                    <a href="tel:6159331100" class="phone-btn">
+                        <i class="fas fa-phone-alt"></i> (615) 933-1100
+                    </a>
+                    <p class="availability">Our team is ready to assist you<br>Monday-Saturday: 8am-7pm<br>Sunday: 10am-4pm</p>
+                </div>
+                
+                <div class="order-option future">
+                    <div class="icon-container">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Future Orders</h3>
+                    <p>Planning ahead? Use our convenient online form below.</p>
+                    <a href="#order-form" class="form-btn">
+                        <i class="fas fa-pencil-alt"></i> Fill Order Form
+                    </a>
+                    <p class="availability">For pickups 24+ hours in advance<br>Submit anytime, 24/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Order Content -->
+    <section class="order-content">
+        <div class="order-policies">
+            <h2>Pricing & Policies</h2>
+            
+            <div class="cake-pricing">
+                <h3>Cake Sizes & Pricing</h3>
+                <div class="cake-size-grid">
+                    <div class="cake-size">
+                        <h4>6" Cake</h4>
+                        <p>Starting at $42</p>
+                        <small>Feeds 8 to 10 adults</small>
+                    </div>
+                    <div class="cake-size">
+                        <h4>8" Cake</h4>
+                        <p>Starting at $54</p>
+                        <small>Feeds 16 to 20 adults</small>
+                    </div>
+                    <div class="cake-size">
+                        <h4>10" Cake</h4>
+                        <p>Starting at $72</p>
+                        <small>Feeds 25 to 30 adults</small>
+                    </div>
+                </div>
+                <p class="pricing-note">
+                    <strong>Note:</strong> Any customization will increase the price.<br>
+                    For orders larger than 30 people, please call <a href="tel:6159331100">(615) 933-1100</a>.
+                </p>
+            </div>
+
+            <div class="policy-alert">
+                <h3>Important Ordering Information</h3>
+                <ul>
+                    <li><strong>Same-day needs:</strong> Please call us at <a href="tel:6159331100">(615) 933-1100</a>.</li>
+                    <li><strong>Future orders:</strong> Please use the order form on this page.</li>
+                    <li>Orders cannot be accepted through email or social media direct messaging.</li>
+                </ul>
+            </div>
+
+            <div class="pop-tart-section">
+                <h3>Pop Tarts & Cinnamon Rolls</h3>
+                <p>These items are sold strictly on a first-come, first-served basis. No call-ahead orders accepted.</p>
+            </div>
+        </div>
+
+        <div class="order-form-container" id="order-form">
+            <h2>Online Order Form</h2>
+            <p class="form-intro">Please use this form for orders with pickup dates at least 24 hours in advance. For same-day orders, please call us at <a href="tel:6159331100">(615) 933-1100</a>.</p>
+            
+            <form id="order-form-element" class="order-form">
+                <div class="form-group">
+                    <label for="cake-type">Cake Type</label>
+                    <select id="cake-type" name="cake-type" required>
+                        <option value="">Select a Cake</option>
+                        <option value="confetti">Confetti Birthday Cake</option>
+                        <option value="peanut-butter">Peanut Butter Ganache Cake</option>
+                        <option value="classic">Classic Chocolate Cake</option>
+                        <option value="carrot">Carrot Cake</option>
+                        <option value="strawberry">Strawberry Cake</option>
+                        <option value="red-velvet">Red Velvet Cake</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cake-size">Cake Size</label>
+                    <select id="cake-size" name="cake-size" required>
+                        <option value="">Select Size</option>
+                        <option value="6">6" - $42</option>
+                        <option value="8">8" - $54</option>
+                        <option value="10">10" - $72</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pickup-date">Pickup Date (at least 24 hours from now)</label>
+                    <input type="date" id="pickup-date" name="pickup-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="special-instructions">Special Instructions</label>
+                    <textarea id="special-instructions" name="special-instructions" placeholder="Any custom requests or notes"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-phone">Phone Number</label>
+                    <input type="tel" id="contact-phone" name="contact-phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+                </div>
+
+                <button type="submit" class="btn primary-btn">Submit Order</button>
+            </form>
+            
+            <p class="same-day-reminder">
+                Need a cake today? Please call us at <a href="tel:6159331100" class="phone-btn-inline"><i class="fas fa-phone-alt"></i> (615) 933-1100</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer (same as other pages) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/bakedlogo.webp" alt="Baked on 8th Logo">
+                <p>Nashville's favorite neighborhood bakery</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#cakes">Cakes</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#location">Visit Us</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>1512 8th Ave S</li>
+                        <li>Nashville, TN 37203</li>
+                        <li><a href="tel:6159331100" class="phone-link"><i class="fas fa-phone-alt"></i> (615) 933-1100</a></li>
+                        <li><a href="mailto:hello@bakedon8th.com">hello@bakedon8th.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday-Saturday: 8am-7pm</li>
+                        <li>Sunday: 10am-4pm</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/bakedon8th" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://facebook.com/bakedon8th" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; <span class="current-year">2025</span> Baked on 8th. All rights reserved.</p>
+            <p>Website designed by <a href="https://puhlunk.com" target="_blank" rel="noopener">PUHLUNK</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* 
+Baked on 8th - Base Styles
+Contains CSS variables, reset, typography, and base elements
+*/
+
+/* ---------- CSS Variables ---------- */
+:root {
+    /* Color Palette */
+    --primary: #f5a8a1; /* Soft pink for primary brand color */
+    --primary-dark: #e08e88;
+    --secondary: #414042; /* Dark grey for text */
+    --accent: #c28563; /* Warm brown accent */
+    --background: #fefcf9; /* Off-white background */
+    --light-gray: #f2f2f2;
+    --medium-gray: #e0e0e0;
+    --dark-gray: #666666;
+    --white: #ffffff;
+    --black: #222222;
+    
+    /* Typography */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Source Sans 3', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+    
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+    
+    /* Box Shadow */
+    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Base Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background);
+    color: var(--secondary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    position: relative;
+    display: inline-block;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ---------- Base Layout Elements ---------- */
+section {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--dark-gray);
+}
+
+/* Media Queries for Base Elements */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+    
+    section {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+}

@@ -1,0 +1,189 @@
+/* 
+Baked on 8th - Utility Styles
+Contains animations, helper classes, and misc utilities
+*/
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Animation delay utilities */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+/* Utility classes for scroll animations using Intersection Observer
+   These classes are added via JavaScript when elements enter viewport */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- Helper Classes ---------- */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Margin utilities */
+.mt-1 { margin-top: var(--spacing-xs); }
+.mt-2 { margin-top: var(--spacing-sm); }
+.mt-3 { margin-top: var(--spacing-md); }
+.mt-4 { margin-top: var(--spacing-lg); }
+.mt-5 { margin-top: var(--spacing-xl); }
+
+.mb-1 { margin-bottom: var(--spacing-xs); }
+.mb-2 { margin-bottom: var(--spacing-sm); }
+.mb-3 { margin-bottom: var(--spacing-md); }
+.mb-4 { margin-bottom: var(--spacing-lg); }
+.mb-5 { margin-bottom: var(--spacing-xl); }
+
+/* Padding utilities */
+.p-1 { padding: var(--spacing-xs); }
+.p-2 { padding: var(--spacing-sm); }
+.p-3 { padding: var(--spacing-md); }
+.p-4 { padding: var(--spacing-lg); }
+.p-5 { padding: var(--spacing-xl); }
+
+/* Color utilities */
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-accent { color: var(--accent); }
+.text-white { color: var(--white); }
+.text-black { color: var(--black); }
+
+/* Background color utilities */
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-accent { background-color: var(--accent); }
+.bg-white { background-color: var(--white); }
+.bg-light-gray { background-color: var(--light-gray); }
+
+/* Width utilities */
+.w-100 { width: 100%; }
+.w-75 { width: 75%; }
+.w-50 { width: 50%; }
+.w-25 { width: 25%; }
+
+/* Shadow utilities */
+.shadow-light { box-shadow: var(--shadow-light); }
+.shadow-medium { box-shadow: var(--shadow-medium); }
+
+/* Border radius utilities */
+.rounded-sm { border-radius: var(--border-radius-sm); }
+.rounded-md { border-radius: var(--border-radius-md); }
+.rounded-lg { border-radius: var(--border-radius-lg); }
+
+/* Accessibility utilities */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Print-friendly utilities */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}

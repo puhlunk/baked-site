@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Baked on 8th</title>
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Gallery Specific CSS -->
+    <link rel="stylesheet" href="css/gallery.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/bakedlogo.webp" alt="Baked on 8th Logo">
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="desktop-nav">
+                    <li><a href="index.html#cakes">Cakes</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#location">Visit Us</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="#gallery" class="active">Gallery</a></li>
+                    <li class="order-btn"><a href="index.html#order">Order Online</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+        
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="index.html#cakes">Cakes</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#location">Visit Us</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="#gallery" class="active">Gallery</a></li>
+                <li class="order-btn"><a href="index.html#order">Order Online</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="section-header">
+            <h1>Our Delicious Creations</h1>
+            <p>A visual journey through our handcrafted cakes and sweet moments</p>
+            <div class="hero-buttons">
+                <a href="index.html#order" class="btn primary-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Container -->
+    <section id="gallery" class="gallery-section">
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All Cakes</button>
+            <button class="filter-btn" data-filter="birthday">Birthday</button>
+            <button class="filter-btn" data-filter="elegant">Elegant</button>
+            <button class="filter-btn" data-filter="character">Character</button>
+            <button class="filter-btn" data-filter="colorful">Colorful</button>
+            <button class="filter-btn" data-filter="themed">Themed</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Gallery items will be dynamically populated by JavaScript -->
+        </div>
+
+        <div class="gallery-lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="Gallery Image" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+            <button class="prev-image">&#10094;</button>
+            <button class="next-image">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/bakedlogo.webp" alt="Baked on 8th Logo">
+                <p>Nashville's favorite neighborhood bakery</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#location">Visit Us</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="/gallery.html">Cakes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>1512 8th Ave S</li>
+                        <li>Nashville, TN 37203</li>
+                        <li><a href="tel:6159331100">(615) 933-1100</a></li>
+                        <li><a href="mailto:hello@bakedon8th.com">hello@bakedon8th.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday-Saturday: 8am-7pm</li>
+                        <li>Sunday: 10am-4pm</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/bakedon8th" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://facebook.com/bakedon8th" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; <span class="current-year">2025</span> Baked on 8th. All rights reserved.</p>
+            <p>Website designed by <a href="https://puhlunk.com" target="_blank" rel="noopener">PUHLUNK</a></p>
+        </div>
+    </footer>
+
+    <!-- Gallery and shared scripts -->
+    <script src="script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

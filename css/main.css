@@ -1,0 +1,19 @@
+/* 
+Baked on 8th - Main CSS File
+Imports all modular CSS files
+*/
+
+/* Import base styles first */
+@import 'base.css';
+
+/* Import layout styles */
+@import 'layout.css';
+
+/* Import component styles */
+@import 'components.css';
+
+/* Import section-specific styles */
+@import 'sections.css';
+
+/* Import utility classes last */
+@import 'utilities.css';

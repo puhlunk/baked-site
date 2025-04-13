@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baked on 8th | Nashville's Favorite Cake Bakery</title>
+    
+    <!-- Updated CSS structure -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/bakedlogo.webp" alt="Baked on 8th Logo">
+                </a>
+            </div>
+            
+            
+            <nav>
+                <ul class="desktop-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#location">Visit Us</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="/gallery.html" class="active">Cakes</a></li>
+                    <li class="order-btn"><a href="index.html#order">Order Online</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+        
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Visit Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li class="order-btn"><a href="#order">Order Online</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nashville's Favorite Cakes</h1>
+            <p>Handcrafted with love since 2015</p>
+            <div class="hero-buttons">
+                <a href="#order" class="btn primary-btn">Order Online</a>
+                <a href="#cakes" class="btn secondary-btn">View Cakes</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="quick-info" class="quick-info">
+        <div class="info-card" data-delay="100">
+            <h3>Location</h3>
+            <p>1512 8th Ave S<br>Nashville, TN</p>
+        </div>
+        <div class="info-card" data-delay="200">
+            <h3>Hours</h3>
+            <p>Mon-Sat: 8am-6pm</p>
+            <p class="hours-highlight">(ONLINE ORDER By 6pm for 7pm Pickup)</p>
+            <p>Sunday: 10am-3pm</p>
+            <p class="hours-highlight">(ONLINE order by 3pm for 4pm pickup)</p>
+        </div>
+        <div class="info-card" data-delay="300">
+            <h3>Phone</h3>
+            <p>(615) 933-1100</p>
+        </div>
+    </section>
+
+    <section id="cakes" class="cakes-section">
+        <div class="section-header">
+            <h2>Our Cakes</h2>
+            <p>All cakes are handmade daily with the finest ingredients</p>
+        </div>
+        
+        <div class="cake-grid">
+            <div class="cake-card">
+                <div class="cake-img">
+                    <img src="assets/confet.webp" alt="Confetti Birthday Cake" loading="lazy">
+                </div>
+                <div class="cake-info">
+                    <h3>Confetti Birthday Cake</h3>
+                    <p>Vanilla cake with sprinkles in the batter and vanilla buttercream</p>
+                    <p class="price">$42.00 - $54.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="cake-card">
+                <div class="cake-img">
+                    <img src="assets/pbj.webp" alt="Peanut Butter Ganache Cake" loading="lazy">
+                </div>
+                <div class="cake-info">
+                    <h3>Peanut Butter Ganache Cake</h3>
+                    <p>Chocolate cake with peanut butter buttercream and chocolate ganache drip</p>
+                    <p class="price">$42.00 - $54.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="cake-card">
+                <div class="cake-img">
+                    <img src="assets/clsc.webp" alt="Classic Cake" loading="lazy">
+                </div>
+                <div class="cake-info">
+                    <h3>Classic Cake</h3>
+                    <p>Yellow cake with chocolate buttercream</p>
+                    <p class="price">$42.00 - $54.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="cake-card">
+                <div class="cake-img">
+                    <img src="assets/carr.webp" alt="Chocolate Ganache Cake" loading="lazy">
+                </div>
+                <div class="cake-info">
+                    <h3>Carrot Cake</h3>
+                    <p>Carrots, pecans, coconut and spice. No raisins</p>
+                    <p class="price">$42.00 - $54.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="cake-card">
+                <div class="cake-img">
+                    <img src="assets/straw.webp" alt="Strawberry Cake" loading="lazy">
+                </div>
+                <div class="cake-info">
+                    <h3>Strawberry Cake</h3>
+                    <p>Strawberry cake with strawberry buttercream</p>
+                    <p class="price">$42.00 - $54.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="cake-card">
+                <div class="cake-img">
+                    <img src="assets/redvel.webp" alt="Red Velvet Cake" loading="lazy">
+                </div>
+                <div class="cake-info">
+                    <h3>Red Velvet Cake</h3>
+                    <p>Red velvet cake with cream cheese frosting</p>
+                    <p class="price">$42.00 - $54.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-all">
+            <a href="/gallery.html" class="btn secondary-btn">View All Cakes</a>
+        </div>
+    </section>
+
+    <section id="ordering-info" class="ordering-info">
+        <div class="ordering-container">
+            <div class="ordering-content">
+                <h2>Ordering Information</h2>
+                
+                <div class="info-box">
+                    <h3>Same Day Ordering</h3>
+                    <p>We accept same-day cake orders for walk-in pickup. Please ask for assistance at the register to receive your order.</p>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Hours for Pickup</h3>
+                    <p>Monday-Saturday: 8am to 7pm<br>
+                    (Orders placed after 6pm will be for pickup the next day)</p>
+                    <p>Sunday: 10am to 4pm<br>
+                    (Orders placed after 3pm will be for pickup on Monday)</p>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Custom Orders</h3>
+                    <p>For future bulk, custom cake, or custom iced cookie orders, please call <a href="tel:6159331100">615-933-1100</a> to check for availability.</p>
+                </div>
+                
+                <div class="info-box important-note">
+                    <h3>Important Notes</h3>
+                    <p>Colors and designs of cakes may vary from photos. No returns or exchanges once your items are outside of the door.</p>
+                </div>
+            </div>
+            
+            <div class="ordering-image">
+                <img src="assets/baked1.jpg" alt="Beautiful cakes on display" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="assets/baked2.jpg" alt="Baked on 8th Interior" loading="lazy">
+            </div>
+            
+            <div class="about-content">
+                <h2>About Baked on 8th</h2>
+                <p>We're a neighborhood bakery in the heart of 8th Avenue South, serving Nashville's most delicious cakes since 2015.</p>
+                <p>Every cake is made from scratch daily using the finest ingredients. Our team of passionate bakers puts love into every creation, ensuring each bite is as beautiful as it is delicious.</p>
+                <p>Whether you're celebrating a birthday, wedding, or just treating yourself to something sweet, we're here to make your day a little more special.</p>
+                
+                <div class="instagram-link">
+                    <a href="https://instagram.com/bakedon8th" target="_blank" rel="noopener">Follow us on Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location-section">
+        <div class="section-header">
+            <h2>Visit Us</h2>
+            <p>Come see us in Nashville's 8th Avenue South district</p>
+        </div>
+        
+        <div class="map-container">
+            <!-- Google Maps iframe - properly implemented map -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.176257244523!2d-86.78476702392288!3d36.12949870395064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886466f970dfbd77%3A0xe2d08763fa00c3a7!2s1512%208th%20Ave%20S%2C%20Nashville%2C%20TN%2037203!5e0!3m2!1sen!2sus!4v1702356712345!5m2!1sen!2sus"
+                width="100%" 
+                height="450" 
+                style="border:0; border-radius: 8px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Baked on 8th Location Map"
+                aria-label="Google Maps showing Baked on 8th location">
+            </iframe>
+        </div>
+        
+        <div class="location-details">
+            <div class="location-card">
+                <h3>Address</h3>
+                <p>1512 8th Ave S<br>Nashville, TN 37203</p>
+                <a href="https://maps.google.com/?q=1512+8th+Ave+S+Nashville+TN+37203" class="btn text-btn" target="_blank" rel="noopener">Get Directions</a>
+            </div>
+            
+            <div class="location-card">
+                <h3>Hours</h3>
+                <p>Monday-Saturday: 8am to 6pm<br>
+                (ONLINE ORDER By 6pm for 7pm Pickup)<br>
+                Sunday: 10am to 3pm<br>
+                (ONLINE order by 3pm for 4pm pickup)
+            </p>
+                <p class="small-text">Holiday hours may vary</p>
+            </div>
+            
+            <div class="location-card">
+                <h3>Contact</h3>
+                <p>Phone: <a href="tel:6159331100">(615) 933-1100</a></p>
+                <p>Email: <a href="mailto:hello@bakedon8th.com">hello@bakedon8th.com</a></p>
+                <div class="social-links">
+                    <a href="https://instagram.com/bakedon8th" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://facebook.com/bakedon8th" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about our cakes and ordering process</p>
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>Do you offer delivery?</h3>
+                <p>We currently offer pickup only from our 8th Avenue South location.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How far in advance should I order?</h3>
+                <p>Same-day orders are welcome, but for custom designs, we recommend ordering at least 48 hours in advance.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you make custom designs?</h3>
+                <p>Yes! Please call us at <a href="tel:6159331100">(615) 933-1100</a> to discuss custom cake and cookie options.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you accommodate allergies?</h3>
+                <p>We can accommodate some dietary restrictions, but our kitchen does contain common allergens. Please call to discuss your specific needs.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How should I store my cake?</h3>
+                <p>For best freshness, store your cake in the refrigerator. Let it sit at room temperature for 20-30 minutes before serving.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What size are your cakes?</h3>
+                <p>Our standard cakes serve 8-10 people. Larger sizes are available for custom orders.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order-section">
+        <div class="section-header">
+            <h2>Ready to Order?</h2>
+            <p>Place your order online for easy pickup at our Nashville bakery</p>
+        </div>
+        
+        <div class="order-container">
+            <a href="#" class="btn primary-btn large-btn">Order Online Now</a>
+            <p class="order-note">Online ordering is for pickup only. For special requests, please call us at <a href="tel:6159331100">(615) 933-1100</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/bakedlogo.webp" alt="Baked on 8th Logo">
+                <p>Nashville's favorite neighborhood bakery</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#location">Visit Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#merch">Merch</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>1512 8th Ave S</li>
+                        <li>Nashville, TN 37203</li>
+                        <li><a href="tel:6159331100">(615) 933-1100</a></li>
+                        <li><a href="mailto:hello@bakedon8th.com">hello@bakedon8th.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday-Saturday: 8am-7pm</li>
+                        <li>Sunday: 10am-4pm</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/bakedon8th" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://facebook.com/bakedon8th" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; <span class="current-year">2025</span> Baked on 8th. All rights reserved.</p>
+            <p>Website designed by <a href="https://puhlunk.com" target="_blank" rel="noopener">PUHLUNK</a></p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

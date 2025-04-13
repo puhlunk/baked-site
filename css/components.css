@@ -1,0 +1,311 @@
+/* 
+Baked on 8th - Component Styles
+Contains buttons, cards, notifications, and other reusable UI components
+*/
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: var(--border-radius-sm);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.btn:hover:after {
+    width: 300px;
+    height: 300px;
+}
+
+.primary-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: var(--white);
+}
+
+.secondary-btn {
+    background-color: rgba(255, 255, 255, 0.95); /* Make button more opaque */
+    color: #414042; /* Darker text for better contrast */
+    border: 2px solid #ffffff;
+    font-weight: 600; /* Slightly bolder text */
+}
+
+.secondary-btn:hover {
+    background-color: #ffffff;
+}
+
+.text-btn {
+    padding: 8px 0;
+    color: var(--accent);
+    position: relative;
+}
+
+.text-btn:after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.text-btn:hover:after {
+    width: 100%;
+}
+
+.large-btn {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+}
+
+/* ---------- Cards ---------- */
+.info-card {
+    text-align: center;
+    padding: var(--spacing-sm);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    color: var(--accent);
+    margin-bottom: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.info-card p {
+    line-height: 1.6;
+}
+
+.hours-highlight {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.info-card h3:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.cake-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cake-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cake-img {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cake-img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.05) 100%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cake-card:hover .cake-img:before {
+    opacity: 1;
+}
+
+.cake-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.cake-card:hover .cake-img img {
+    transform: scale(1.05);
+}
+
+.cake-info {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cake-info h3 {
+    margin-bottom: var(--spacing-xs);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--secondary);
+    transition: color 0.3s ease;
+}
+
+.cake-card:hover .cake-info h3 {
+    color: var(--accent);
+}
+
+.cake-info p {
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-sm);
+    flex-grow: 1;
+}
+
+.price {
+    font-weight: 600;
+    color: var(--accent) !important;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm) !important;
+}
+
+.add-to-cart {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-to-cart:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.add-to-cart:hover:after {
+    width: 300px;
+    height: 300px;
+}
+
+.add-to-cart:hover {
+    background-color: var(--primary-dark);
+}
+
+.add-to-cart.added {
+    background-color: #4CAF50;
+}
+
+/* Location and FAQ cards */
+.location-card, .faq-item {
+    background-color: var(--white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease;
+}
+
+.location-card:hover, .faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.location-card h3, .faq-item h3 {
+    color: var(--accent);
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+    display: inline-block;
+}
+
+.location-card h3:after, .faq-item h3:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+/* ---------- Notifications ---------- */
+.cart-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 20px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-medium);
+    z-index: 2000;
+    transform: translateX(150%);
+    transition: transform 0.3s ease;
+}
+
+.cart-notification.active {
+    transform: translateX(0);
+}
+
+/* Media queries for components */
+@media (max-width: 768px) {
+    .cake-img {
+        height: 220px;
+    }
+    
+    .add-to-cart {
+        padding: 10px 15px;
+    }
+}
