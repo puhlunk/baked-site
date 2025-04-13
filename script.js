@@ -29,6 +29,41 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize Native Lazy Loading for images
     initImageLazyLoading();
+
+
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+    }, false);
+    
+    // Prevent keyboard shortcuts for saving images
+    document.addEventListener('keydown', function(e) {
+        // Prevent Ctrl+S, Ctrl+U, and F12
+        if (
+            (e.ctrlKey && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'U')) || 
+            e.key === 'F12'
+        ) {
+            e.preventDefault();
+            return false;
+        }
+    }, false);
+
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        
+
+        const message = document.createElement('div');
+        message.innerHTML = "Contact @puhlunk for access :)";
+        message.style.cssText = "position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background-color:rgba(0,0,0,0.7); color:white; padding:10px 20px; border-radius:5px; font-size:14px; z-index:9999;";
+        document.body.appendChild(message);
+        
+        
+        setTimeout(() => {
+            document.body.removeChild(message);
+        }, 100000);
+        
+        return false;
+    }, false);
     
     /**
      * Mobile Menu Functionality
