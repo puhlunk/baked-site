@@ -68,7 +68,7 @@ body::before {
     width: 100%; /* Reduced width to keep it on the left */
     height: 100%;
     z-index: 4; /* Keeping your z-index value */
-    background-image: url('/assets/cache/cache71.png');
+    background-image: url('../assets/cache/cache71.png');
     background-repeat: repeat;
     background-size: 1000px; /* Makes each repeated image smaller */
     opacity: 0.1;
