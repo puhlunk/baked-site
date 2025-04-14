@@ -201,6 +201,104 @@ Specific styles for the gallery page
     max-width: 80%;
 }
 
+/* Section spacing */
+.cakes-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--bg-light);
+}
+
+/* Custom creations header */
+.custom-creations-header {
+    padding: var(--spacing-lg) var(--spacing-md);
+    background-color: var(--white);
+    text-align: center;
+}
+
+.custom-creations-header h2 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary);
+}
+
+.custom-creations-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-dark);
+}
+
+/* Call to action section */
+.cta-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-container h2 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary);
+}
+
+.cta-container p {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-dark);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* Ensure separation between standard cakes and gallery */
+.gallery-section {
+    padding-top: var(--spacing-md);
+}
+
+/* Smoother transitions between sections */
+.section-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Enhance gallery filters with hover effects */
+.filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add focus styles for accessibility */
+.filter-btn:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Animation for cake cards */
+.cake-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cake-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .gallery-grid {
